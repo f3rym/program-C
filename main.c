@@ -15,7 +15,7 @@ int main()
     char**** str = NULL;
     int n1, n, m;
     int y;
-
+	int molodeh_xxxREEEEEEEEEEEE;
 	int again = 1;
 	while (again)
 	{
