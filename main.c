@@ -5,7 +5,7 @@
 #include <locale.h>
 
 #define К 200
-
+#define N 65
 int main()
 {
 	setlocale(LC_ALL, "ru_RU.UTF-8");
