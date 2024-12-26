@@ -2,7 +2,7 @@
 
 char**** mem(int n1, int n, int m, int К);
 
-int proverkaEl(int a, int y);
+int CheckElement(int a, int y);
 
 int inputMatrix(char**** str, int n1, int n, int m, int К);
 

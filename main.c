@@ -21,11 +21,11 @@ int main()
 	{
 		while (1)
 		{
-			printf("Введите кол-во \033[33mматриц\033[0m n1 :\t");
+			printf("Введите кол-во\033[33m матриц\033[0m n1 :\t");
 
 			y = scanf_s("%d", &n1);
 
-			if (proverkaEl(n1, y))
+			if (CheckElement(n1, y))
 				break;
 		}
 
@@ -35,7 +35,7 @@ int main()
 
 			y = scanf_s("%d", &n);
 
-			if (proverkaEl(n, y))
+			if (CheckElement(n, y))
 				break;
 		}
 
@@ -45,7 +45,7 @@ int main()
 
 			y = scanf_s("%d", &m);
 
-			if (proverkaEl(m, y))
+			if (CheckElement(m, y))
 				break;
 		}
 		

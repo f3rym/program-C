@@ -55,7 +55,7 @@ char**** mem(int n1, int n, int m, int К)
 	return str;
 }
 
-int proverkaEl(int a, int y)
+int CheckElement(int a, int y)
 {	
 	if (y != 1 || a <= 0 || a >= INT_MAX)
 	{
