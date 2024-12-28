@@ -173,3 +173,8 @@ void memClear(char ****str, int n1, int n, int m)
 	}
 	free(str);
 }
+
+void SayHello()
+{
+	printf("Hello");
+}
