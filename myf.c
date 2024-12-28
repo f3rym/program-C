@@ -178,3 +178,8 @@ void SayHello()
 {
 	printf("Hello World");
 }
+
+void SayBye()
+{
+	printf("Bye POOOPS");
+}
