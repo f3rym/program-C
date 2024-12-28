@@ -176,5 +176,5 @@ void memClear(char ****str, int n1, int n, int m)
 
 void SayHello()
 {
-	printf("Hello");
+	printf("Hello World");
 }
