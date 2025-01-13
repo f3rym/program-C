@@ -56,6 +56,45 @@ int CheckElement(int a, int y)
 		return 1;
 }
 
+int enterN1()
+{
+	int el, y;
+	printf("Введите кол-во\033[33m матриц\033[0m n1 :\t");
+	while (1)
+	{
+		y = scanf_s("%d", &el);
+		if (CheckElement(el, y))
+			break;
+	};
+	return el;
+}
+
+int enterN()
+{
+	int el, y;
+	printf("Введите кол-во \033[36mстрок\033[0m :\t");
+	while (1)
+	{
+		y = scanf_s("%d", &el);
+		if (CheckElement(el, y))
+			break;
+	};
+	return el;
+}
+
+int enterM()
+{
+	int el, y;
+	printf("Введите кол-во \033[37mстолбцов\033[0m :\t");
+	while (1)
+	{
+		y = scanf_s("%d", &el);
+		if (CheckElement(el, y))
+			break;
+	};
+	return el;
+}
+
 int inputMatrix(char ****str, int n1, int n, int m, int К)
 {
 	for (int i = 0; i < n1; i++)
@@ -174,12 +213,21 @@ void memClear(char ****str, int n1, int n, int m)
 	free(str);
 }
 
-void SayHello()
+int againProg()
 {
-	printf("Hello");
-}
-
-void SayBye()
-{
-	printf("Bye POOOPS")
+	int y, again;
+	printf("\nХотите попробовать снова? \033[32mДа - 1\033[0m. \033[31mНет - 0 \033[0m:\t");
+	while (1)
+	{
+		y = scanf_s("%d", &again);
+		if (y != 1 || (again != 0 && again != 1))
+		{
+			printf("\033[31mОшибка. Переход к завершению...\033[0m");
+			rewind(stdin);
+			return 1;
+		}
+		else
+			break;
+	}
+	return again;
 }
