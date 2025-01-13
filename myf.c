@@ -59,9 +59,10 @@ int CheckElement(int a, int y)
 int enterN1()
 {
 	int el, y;
-	printf("Введите кол-во\033[33m матриц\033[0m n1 :\t");
+	
 	while (1)
 	{
+		printf("Введите кол-во\033[33m матриц\033[0m n1 :\t");
 		y = scanf_s("%d", &el);
 		if (CheckElement(el, y))
 			break;
@@ -72,9 +73,10 @@ int enterN1()
 int enterN()
 {
 	int el, y;
-	printf("Введите кол-во \033[36mстрок\033[0m :\t");
+	
 	while (1)
 	{
+		printf("Введите кол-во \033[36mстрок\033[0m :\t");
 		y = scanf_s("%d", &el);
 		if (CheckElement(el, y))
 			break;
@@ -85,9 +87,10 @@ int enterN()
 int enterM()
 {
 	int el, y;
-	printf("Введите кол-во \033[37mстолбцов\033[0m :\t");
+	
 	while (1)
 	{
+		printf("Введите кол-во \033[37mстолбцов\033[0m :\t");
 		y = scanf_s("%d", &el);
 		if (CheckElement(el, y))
 			break;
