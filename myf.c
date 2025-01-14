@@ -59,7 +59,6 @@ int CheckElement(int a, int y)
 int enterN1()
 {
 	int el, y;
-	
 	while (1)
 	{
 		printf("Введите кол-во\033[33m матриц\033[0m n1 :\t");
@@ -73,7 +72,6 @@ int enterN1()
 int enterN()
 {
 	int el, y;
-	
 	while (1)
 	{
 		printf("Введите кол-во \033[36mстрок\033[0m :\t");
@@ -87,7 +85,6 @@ int enterN()
 int enterM()
 {
 	int el, y;
-	
 	while (1)
 	{
 		printf("Введите кол-во \033[37mстолбцов\033[0m :\t");
@@ -227,7 +224,8 @@ int againProg()
 		{
 			printf("\033[31mОшибка. Переход к завершению...\033[0m");
 			rewind(stdin);
-			return 1;
+			again = 0;
+			return again;
 		}
 		else
 			break;
